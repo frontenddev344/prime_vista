@@ -49,7 +49,7 @@ const DiscoverBars = () => {
                 </p>
 
                 {/* Cards */}
-                <div className="grid gap-8 md:grid-cols-3 max-w-5xl mx-auto">
+                <div className="grid gap-8 md:grid-cols-3 max-w-7xl mx-auto">
                     {features.map((item, index) => (
                         <div
                             key={index}
@@ -63,10 +63,10 @@ const DiscoverBars = () => {
                             />
                             </div>
 
-                            <h3 className="font-semibold text-xl lg:text-2xl !font-body tracking-wide mb-3">
+                            <h3 className="font-semibold text-2xl md:text-3xl lg:text-2xl tracking-wide mb-3">
                                 {item.title}
                             </h3>
-                            <p className="text-black/800 text-base leading-relaxed font-regular">
+                            <p className="text-black/800 text-sm sm:text-base leading-relaxed font-regular">
                                 {item.description}
                             </p>
                         </div>

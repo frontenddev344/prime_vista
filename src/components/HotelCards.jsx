@@ -51,24 +51,24 @@ export default function HotelCards() {
 
   const iconColor = "#b2876b";
   return (
-    <section className=" py-20 px-6">
+    <section className=" py-20">
       <div className="container mx-auto text-center">
 
         {/* TOP TEXT */}
-        <p className="text-icon text-lg mb-2">
+        <p className="text-icon text-base md:text-lg mb-2">
           Browse Your Hotel & Resort
         </p>
 
-        <h2 className="text-5xl font-serif text-black mb-24">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-black mb-24">
           Comfortable Spaces For You
         </h2>
 
         {/* CARDS */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {hotels.map((hotel, index) => (
             <div
               key={index}
-              className="bg-white border border-[#F3EAE2B8] rounded-3xl p-5 flex flex-col gap-4 shadow-sm hover:shadow-lg transition  transform hover:shadow-lg hover:-translate-y-1"
+              className="bg-white border border-[#F3EAE2B8] rounded-3xl p-5 flex flex-col gap-4 shadow-sm hover:shadow-lg transition duration-300 transform hover:shadow-lg hover:-translate-y-1"
             >
               {/* TOP INFO */}
               <div className="flex items-center justify-between text-sm text-gray-600">
@@ -120,7 +120,7 @@ export default function HotelCards() {
                 
                 <Link
                   to="/rooms"
-                  className="flex items-center gap-2 text-sm font-medium text-black hover:underline"
+                  className="flex w-fit items-center bg-icon py-2 px-6 hover:bg-btn-hover rounded-full text-white  gap-2 text-sm font-medium"
                 >
                   EXPLORE NOW →
                 </Link>

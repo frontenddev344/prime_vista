@@ -76,7 +76,7 @@ export default function TestimonialSlider() {
       <div className="relative container mx-auto">
 
         {/* Header */}
-        <div className="flex items-center justify-between mb-12">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-12 gap-4">
           <div>
             <p className="text-primary uppercase tracking-widest text-lg mb-4">
              TESTIMONIALS

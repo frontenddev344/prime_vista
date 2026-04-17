@@ -4,11 +4,12 @@ import bannerImage from '../assets/banner_image.jpg'
 
 const Hero = () => {
   return (
-    <section className="bg-background pt-24 overflow-hidden">
+    // overflow-hidden
+    <section className="bg-background pt-24"> 
       <div className="container max-w-7xl mx-auto">
 
         {/* TOP HEADING */}
-        <h1 className="text-charcoal text-[clamp(40px,10vw,180px)] mx-auto text-center max-w-7xl leading-tight mb-16">
+        <h1 className="text-charcoal text-[clamp(40px,10vw,180px)] mx-auto text-center max-w-7xl leading-tight mb-6 sm:mb-6 md:mb-12 lg:mb-16">
           From{" "}
           <span className="[-webkit-text-stroke:2px_#bc967e] text-transparent">
             City
@@ -17,27 +18,27 @@ const Hero = () => {
         </h1>
 
         {/* MAIN GRID */}
-        <div className="grid lg:grid-cols-[1fr_1.5fr_1fr] gap-12 items-center">
+        <div className="grid lg:grid-cols-[1fr_1.5fr_1fr] gap-6 sm:gap-8 lg:gap-12 items-center">
 
           {/* LEFT CONTENT */}
           <div className="text-center lg:text-left max-w-md mx-auto lg:mx-0">
             <div className="mb-6 flex justify-center">
-              <div className="w-auto h-20 flex items-center justify-center text-[#bc967e]">
+              <div className="w-auto h-12 sm:h-16 lg:h-20 flex items-center justify-center text-[#bc967e]">
                 <img src={starImage} alt="star" />
               </div>
             </div>
 
-            <p className="text-2xl sm:text-3xl lg:text-4xl max-w-[400px] text-center text-charcoal leading-relaxed font-second">
+            <p className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl max-w-[400px] text-center text-charcoal leading-relaxed font-second">
               Discover premium hotels and vibrant bar experiences across the
               finest destinations.
             </p>
 
             <div className="mt-8 flex items-center justify-center gap-4">
-              <button className="text-xl tracking-wide text-charcoal">
+              <button className="text-lg sm:text-xl tracking-wide text-charcoal">
                 GET A FREE QUOTE
               </button>
 
-              <button className="w-10 h-10 rounded-full border border-charcoal flex items-center justify-center">
+              <button className="w-8 sm:w-10 h-8 sm:h-10 rounded-full border border-charcoal flex items-center justify-center">
                 ↗
               </button>
             </div>
@@ -55,7 +56,7 @@ const Hero = () => {
           </div>
 
           {/* RIGHT FORM */}
-          <div className="bg-[#f3ebe3] p-6 rounded-2xl leading-none max-w-md mx-auto w-full shadow-sm">
+          <div className="bg-[#f3ebe3] p-6 rounded-2xl leading-none max-w-md mx-auto w-full shadow-sm mb-20 lg:mb-0">
             <h2 className="text-3xl text-center mb-6 text-charcoal">
               Reserve Your Accommodations
             </h2>
@@ -102,7 +103,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="w-screen relative left-1/2 right-1/2 -mx-[50vw] -mt-16 bg-[#4b2e1e] py-16 overflow-hidden">
+      <div className="w-screen relative left-1/2 right-1/2 -mx-[50vw] -mt-16 bg-[#4b2e1e] py-8 sm:py-12 lg:py-16 overflow-hidden">
 
         {/* Gradient edges (premium look) */}
         <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-[#4b2e1e] to-transparent z-10" />

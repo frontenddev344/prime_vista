@@ -10,11 +10,11 @@ export default function HotelHero() {
 
     const iconColor = "#b2876b";
     return (
-        <section className="bg-background py-16 sm:py-20 px-4 sm:px-6 md:px-12 lg:px-16">
+        <section className="bg-background py-16 sm:py-20 ">
             <div className="container mx-auto space-y-16">
 
                 {/* Row 1 */}
-                <div className="grid md:grid-cols-[2fr_1fr] gap-10 items-center">
+                <div className="grid lg:grid-cols-[2fr_1fr] gap-10 items-center mb-6 sm:mb-8 lg:mb-16">
 
                     <div>
                         <p className="text-lg tracking-wide text-icon mb-4">
@@ -52,7 +52,7 @@ export default function HotelHero() {
                 </div>
 
                 {/* Row 2 */}
-                <div className="grid md:grid-cols-3 gap-6 items-center">
+                <div className="grid lg:grid-cols-3 gap-6 items-center">
 
 
                     <div>
@@ -113,7 +113,7 @@ export default function HotelHero() {
                 </div>
 
                 {/* Row 3 */}
-                <div className="grid md:grid-cols-3 gap-6 items-center">
+                <div className="grid lg:grid-cols-3 gap-6 items-center">
                     <div className="bg-white rounded-2xl p-6 sm:p-8 relative shadow-sm">
                         <span className="absolute top-4 right-6 text-5xl sm:text-6xl lg:text-7xl text-gray-300">
                             03

@@ -9,9 +9,9 @@ import Logo from "../assets/logo_white.png";
 
 export default function Footer() {
     return (
-        <footer className="bg-gradient-to-r from-[#2c1a0f] to-[#4b2e1a] text-white px-6 py-16">
+        <footer className="bg-gradient-to-r from-[#2c1a0f] to-[#4b2e1a] text-white py-8 sm:py-12 lg:py-16">
 
-            <div className="w-screen relative left-1/2 right-1/2 -mx-[50vw] -mt-16 bg-transparent py-10 border-b border-primary overflow-hidden">                {/* Gradient edges (premium look) */}
+            <div className="w-screen relative left-1/2 right-1/2 -mx-[50vw] -mt-16 bg-transparent py-6 sm:py-10 border-b border-primary overflow-hidden">                {/* Gradient edges (premium look) */}
                 <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-[#4b2e1e] to-transparent z-10" />
                 <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-[#4b2e1e] to-transparent z-10" />
 
