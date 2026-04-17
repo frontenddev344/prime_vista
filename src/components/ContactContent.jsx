@@ -8,8 +8,8 @@ const ContactContent = () => {
   <div className="flex flex-col md:flex-row gap-8 justify-center mb-16">
 
 
-<div className="bg-btn text-white rounded-2xl shadow-lg p-6 flex flex-col items-start sm:items-center gap-6 w-full ">
-    <div className="w-24 h-24 rounded-full overflow-hidden flex-shrink-0">
+<div className="bg-btn text-white rounded-2xl shadow-lg p-6 flex flex-col lg:flex-row items-start  gap-6 w-full ">
+    <div className="w-20 sm:w-30 h-20 sm:h-30 rounded-full overflow-hidden flex-shrink-0">
         <img
             src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
             alt=""
@@ -17,7 +17,7 @@ const ContactContent = () => {
         />
     </div>
     <div>
-        <h3 className="text-2xl lg:text-3xl font-semibold mb-6">
+        <h3 className="text-2xl lg:text-3xl font-semibold mb-4 sm:mb-6">
             Reception Always Open
         </h3>
         <p className="text-sm sm:text-base  text-gray-200">
@@ -27,8 +27,8 @@ const ContactContent = () => {
     </div>
 </div>
 
-<div className="bg-btn text-white rounded-2xl shadow-lg p-6 flex flex-col sm: items-start sm:items-center gap-6 w-full">
-    <div className="w-24 h-24 rounded-full overflow-hidden flex-shrink-0">
+<div className="bg-btn text-white rounded-2xl shadow-lg p-6 flex flex-col lg:flex-row items-start   gap-6 w-full">
+    <div className="w-20 sm:w-30 h-20 sm:h-30 rounded-full overflow-hidden flex-shrink-0">
         <img
             src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
             alt=""
@@ -36,7 +36,7 @@ const ContactContent = () => {
         />
     </div>
     <div>
-        <h3 className="text-2xl lg:text-3xl font-semibold mb-6">
+        <h3 className="text-2xl lg:text-3xl font-semibold mb-4 sm:mb-6">
             Online Reservations
         </h3>
         <p className="text-sm sm:text-base  text-gray-200">

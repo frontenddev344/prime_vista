@@ -5,7 +5,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { FiPhone, FiSend } from "react-icons/fi";
 import { IoGlobeOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo_white.png";
+import Logo from "../assets/logo_v1.png";
 
 export default function Footer() {
     return (
@@ -39,7 +39,7 @@ export default function Footer() {
                     <div className="md:col-span-3 lg:col-span-1">
                         <div className="flex items-center gap-2 mb-4">
                             <Link to="/">
-                                <div className="h-14">
+                                <div className="h-20 sm:h-24">
                                     <img src={Logo} alt="logo" className="h-full object-contain" />
                                 </div>
                             </Link>
