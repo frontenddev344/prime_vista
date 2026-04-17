@@ -99,10 +99,11 @@ const BookingForm = () => {
                     {/* Dates */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                         <div>
-                            <label className="block text-sm text-primary mb-1">Check In</label>
+                            <label className="block text-sm text-primary mb-1">Check In Date</label>
                             <input
                                 type="date"
                                 min={today}
+                                 placeholder="dd-mm-yyyy"
                                 value={checkIn}
                                 onChange={(e) => {
                                     setCheckIn(e.target.value);
@@ -112,10 +113,11 @@ const BookingForm = () => {
                             />
                         </div>
                         <div>
-                            <label className="block text-sm text-primary mb-1">Check Out</label>
+                            <label className="block text-sm text-primary mb-1">Check Out Date</label>
                             <input
                                 type="date"
                                 min={checkIn || today}
+                                placeholder="dd-mm-yyyy"
                                 value={checkOut}
                                 onChange={(e) => setCheckOut(e.target.value)}
                                 className="w-full border border-icon rounded-full px-4 py-2 focus:outline-none"
