@@ -80,7 +80,7 @@ const BookingForm = () => {
 
     return (
         <section className="py-8 px-4 sm:px-6 lg:px-8 bg-gray-50">
-            <div className="max-w-6xl bg-white mx-auto border border-[#45454524] grid md:grid-cols-2 gap-10 items-center shadow-lg rounded-xl overflow-hidden">
+            <div className="max-w-6xl bg-white mx-auto border border-[#45454524] grid md:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 items-center shadow-lg rounded-xl overflow-hidden">
 
                 {/* Left Image */}
                 <div className="w-full h-full overflow-hidden">
@@ -92,7 +92,7 @@ const BookingForm = () => {
                 </div>
 
                 {/* Right Form */}
-                <form className="rounded-2xl p-8 flex flex-col" onSubmit={handleSubmit}>
+                <form className="rounded-2xl p-4 sm:p-6 lg:p-8 flex flex-col" onSubmit={handleSubmit}>
                     <h2 className="text-3xl lg:text-5xl font-charcoal font-regular mb-6">Book Your Stay</h2>
                     {error && <p className="text-red-500 mb-4">{error}</p>}
 
@@ -216,7 +216,7 @@ const BookingForm = () => {
                     )}
 
                     {/* Submit */}
-                    <button type="submit" className="w-full bg-icon text-white py-3 rounded-lg hover:bg-btn-hover transition">
+                    <button type="submit" className="w-full bg-icon text-white py-3 rounded-full hover:bg-btn-hover transition">
                         Check Availability
                     </button>
                 </form>
