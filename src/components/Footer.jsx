@@ -54,13 +54,13 @@ export default function Footer() {
                             <p className="mb-3 text-sm">Follow Us On:</p>
                             <div className="flex gap-3">
 
-                                <div className="bg-[#c89b6d] p-2 rounded-md cursor-pointer">
+                                <div className="bg-[#c89b6d] p-2 rounded-full cursor-pointer hover:-translate-y-[1px] transition duration-300">
                                     <FaFacebookF />
                                 </div>
-                                <div className="bg-[#c89b6d] p-2 rounded-md cursor-pointer">
+                                <div className="bg-[#c89b6d] p-2 rounded-full cursor-pointer hover:-translate-y-[1px] transition duration-300">
                                     <FaXTwitter />
                                 </div>
-                                <div className="bg-[#c89b6d] p-2 rounded-md cursor-pointer">
+                                <div className="bg-[#c89b6d] p-2 rounded-full cursor-pointer hover:-translate-y-[1px] transition duration-300">
                                     <FaYoutube />
                                 </div>
                             </div>

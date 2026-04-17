@@ -57,7 +57,7 @@ const PrivateDining = () => {
     available for larger gatherings.
   </p>
 
-  <button className="bg-btn-hover hover:btn-icon text-white px-6 py-3 rounded-md hover:opacity-90 transition">
+  <button className="bg-btn-hover hover:btn-icon text-white px-6 py-3 rounded-full hover:opacity-90 transition">
     Book Now
   </button>
 </div>

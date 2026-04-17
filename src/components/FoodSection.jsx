@@ -33,7 +33,7 @@ const FoodSection = () => {
       penatibus justo congue dictumst neque.
     </p>
 
-    <button className="bg-btn-hover hover:btn-icon px-6 py-3 rounded-lg hover:opacity-90 transition capitalize">
+    <button className="bg-btn-hover hover:btn-icon px-6 py-3 rounded-full hover:opacity-90 transition capitalize">
       Reserve your table
     </button>
   </div>
@@ -61,7 +61,7 @@ const FoodSection = () => {
         blends perfectly with a warm and relaxing atmosphere.
       </p>
 
-      <button className="bg-btn-hover hover:btn-icon px-6 py-3 rounded-lg hover:opacity-90 transition capitalize">
+      <button className="bg-btn-hover hover:btn-icon px-6 py-3 rounded-full hover:opacity-90 transition capitalize">
         see what’s special
       </button>
     </div>

@@ -29,7 +29,7 @@ function RoomCard({ title, price, image, className = "", showButton = false }) {
                             className="absolute left-0 right-0 bottom-2 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 flex items-center justify-between"
                         >
 
-                            <NavLink to="/booking" className="bg-icon inline-flex hover:bg-btn-hover transition duration-500 px-4 py-2 text-sm rounded">
+                            <NavLink to="/booking" className="bg-icon inline-flex hover:bg-btn-hover transition duration-500 px-4 py-2 text-sm rounded-full">
                                 Book Now
                             </NavLink>
 

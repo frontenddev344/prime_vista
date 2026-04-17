@@ -65,7 +65,7 @@ const ImageGridTextSection = ({
                     {button?.text && (
                         <button
                             onClick={button.onClick}
-                            className={`mt-6 bg-[#3b2617] text-white px-6 py-3 rounded-full hover:bg-[#2a1b10] transition ${button.className || ""
+                            className={`mt-6 bg-icon text-white px-6 py-3 rounded-full hover:bg-btn-hover transition ${button.className || ""
                                 }`}
                         >
                             {button.text}

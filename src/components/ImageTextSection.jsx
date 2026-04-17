@@ -36,7 +36,7 @@ const ImageTextSection = ({
           {button?.text && (
             <button
               onClick={button.onClick}
-              className ="bg-icon inline-flex hover:bg-btn-hover transition duration-500 px-6 py-3 text-sm sm:text-lg rounded text-white"
+              className ="bg-icon inline-flex hover:bg-btn-hover transition duration-500 px-6 py-3 text-sm sm:text-lg rounded-full text-white"
             >
               {button.text}
             </button>

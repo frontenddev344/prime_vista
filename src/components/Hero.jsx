@@ -94,7 +94,7 @@ const Hero = () => {
                 </div>
               </div>
 
-              <button className="w-full bg-[#bc967e] text-white py-3 rounded-xl mt-4 hover:bg-[#a67c5b] transition">
+              <button className="w-full bg-[#bc967e] text-white py-3 mt-4 hover:bg-[#a67c5b] transition rounded-full">
                 CHECK AVAILABILITY
               </button>
             </div>

@@ -67,7 +67,7 @@ export default function TestimonialSlider() {
 
   return (
     <section
-      className="relative py-20 px-6 bg-cover bg-center"
+      className="relative py-20 px-3 sm:px-6 bg-cover bg-center"
       style={{ backgroundImage: `url(${TestimonialBg})` }}
     >
       {/* Overlay */}
@@ -113,10 +113,15 @@ export default function TestimonialSlider() {
         >
           {[...testimonials, ...testimonials].map((item, index) => (
             <div
-              key={index}
-              className="flex-[0_0_calc((100%-4rem)/4)] 
-              bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-md"
-            >
+            key={index}
+            className="
+              flex-[0_0_100%] 
+              md:flex-[0_0_calc((100%-1.5rem)/2)] 
+              lg:flex-[0_0_calc((100%-3rem)/3)] 
+              xl:flex-[0_0_calc((100%-4.5rem)/4)]
+              bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-md
+            "
+          >
               {/* Avatar */}
               <img
                 src={item.image}

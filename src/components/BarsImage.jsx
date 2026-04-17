@@ -31,7 +31,7 @@ const BarsImage = () => {
 
           <NavLink
             to="/booking"
-            className="inline-block mt-6 bg-btn-hover hover:bg-icon  text-white px-6 py-2 rounded transition duration-300"
+            className="inline-block mt-6 bg-btn-hover hover:bg-icon  text-white px-6 py-2 rounded-full transition duration-300"
           >
             Book Now
           </NavLink>
