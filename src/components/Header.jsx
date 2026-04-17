@@ -30,7 +30,7 @@ export default function Header() {
                 {/* Logo */}
                 <div className="flex items-center gap-2">
                     <Link to="/">
-                        <div className="h-10  sm:h-20 md:h-24">
+                        <div className="h-10  sm:h-12 md:h-16">
                             <img src={Logo} alt="logo" className="h-full object-contain" />
                         </div>
                     </Link>
@@ -50,7 +50,7 @@ export default function Header() {
                 <NavLink to="/booking">
                     <span className="relative inline-flex overflow-hidden border border-transparent bg-btn text-white px-5 py-2 rounded-full font-medium text-sm md:text-base transition-all duration-300 ease-out group">
                         <span className="relative z-10 flex items-center gap-2 group-hover:text-charcoal transition-colors duration-300">
-                            Book Now <ArrowUpRight size={18} />
+                            Book Now <ArrowUpRight size={18} className="hidden sm:block" />
                         </span>
                         <span className="absolute inset-0 bg-[#f3eae1] scale-y-0 origin-bottom transition-transform duration-300 ease-out group-hover:scale-y-100 rounded-full"></span>
                     </span>
