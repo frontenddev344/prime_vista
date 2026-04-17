@@ -21,7 +21,7 @@ export default function Header() {
 
     return (
         <header
-            className={`fixed w-full mx-auto px-2 transition-all duration-300 z-99 ${
+            className={`fixed w-full px-2  transition-all duration-300 z-99 ${
                 scrolled ? "top-0" : "top-3"
             }`}
         >

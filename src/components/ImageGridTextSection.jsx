@@ -8,7 +8,8 @@ const ImageGridTextSection = ({
     images = [],
 }) => {
     return (
-        <section className="w-full bg-[#d9cfc6] py-20 px-6 md:px-16">
+        <section className="w-full bg-[#d9cfc6] py-12 md:py-16 lg:py-20 md:px-16">
+            <div className="container">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">             
                 <div className="flex-1 flex items-center">
                     <div className="grid grid-cols-2 gap-6 w-full justify-items-center">
@@ -73,6 +74,8 @@ const ImageGridTextSection = ({
                     )}
                 </div>
             </div>
+            </div>
+         
         </section>
     );
 };

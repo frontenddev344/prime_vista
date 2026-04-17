@@ -6,11 +6,11 @@ export default function AboutFeatureSection({
   className = "",
 }) {
   return (
-    <section className={`bg-white py-20 px-6 ${className}`}>
+    <section className={`bg-white py-12 sm:py-16 lg:py-20 ${className}`}>
       <div className="container text-center">
         {/* Title */}
         {title && (
-          <h2 className="text-4xl md:text-5xl font-serif text-[#3b2a1d] mb-20">
+          <h2 className="text-4xl md:text-5xl font-serif text-[#3b2a1d] mb-12  md:mb-16 lg:mb-20">
             {title}
           </h2>
         )}

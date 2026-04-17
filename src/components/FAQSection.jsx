@@ -13,7 +13,7 @@ export default function FAQSection({
   };
 
   return (
-    <section className={`bg-[#f7f5f2] py-20 px-6 ${className}`}>
+    <section className={`bg-white py-12 md:py-16 lg:py-20 px-6 ${className}`}>
       <div className="max-w-5xl mx-auto">
         {/* Title */}
         <h2 className="text-3xl md:text-5xl font-serif text-center text-[#3b2a1d] mb-12">
