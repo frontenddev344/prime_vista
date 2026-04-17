@@ -3,6 +3,11 @@ import SubBanner from "../components/SubBanner";
 import AboutBanner from "../assets/about_banner.jpg"
 import ImageTextSection from "../components/ImageTextSection";
 import ImageGridTextSection from "../components/ImageGridTextSection";
+import ImageGridImage1 from "../assets/about-grid_image1.jpg"
+import ImageGridImage2 from "../assets/about-grid_image2.jpg"
+import ImageGridImage3 from "../assets/about-grid_image3.jpg"
+import ImageGridImage4 from "../assets/about-grid_image4.jpg"
+import AboutAfterBanner from "../assets/about_after_banner.jpg"
 
 const About = () => {
   const content1 = {
@@ -25,7 +30,7 @@ const About = () => {
       onClick: () => console.log("Contact clicked"),
     },
     image:
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945",
+      AboutAfterBanner,
   };
 
   const content2 = {
@@ -43,10 +48,10 @@ const About = () => {
       onClick: () => console.log("clicked"),
     },
     images: [
-      "https://images.unsplash.com/photo-1590490360182-c33d57733427", // small top
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945", // big center
-      "https://images.unsplash.com/photo-1501117716987-c8e1ecb2107c", // wide bottom
-      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b", // small bottom
+      ImageGridImage1, 
+      ImageGridImage2, 
+      ImageGridImage3, 
+      ImageGridImage4, 
     ],
   };
 

@@ -9,18 +9,16 @@ const ImageGridTextSection = ({
 }) => {
     return (
         <section className="w-full bg-[#d9cfc6] py-20 px-6 md:px-16">
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">             
+                <div className="flex-1 flex items-center">
+                    <div className="grid grid-cols-2 gap-6 w-full justify-items-center">
 
-                {/* LEFT: Image Collage */}
-                <div className="flex-1">
-                    <div className="grid grid-cols-2 gap-6 items-start">
-
-                        <div className="flex flex-col gap-6 translate-y-10">
+                        <div className="flex flex-col gap-6 translate-y-10 justify-center">
                             {images[0] && (
                                 <img
                                     src={images[0]}
                                     alt=""
-                                    className="w-full aspect-[4/3] object-cover rounded-2xl"
+                                    className="w-full max-w-[150px] aspect-[2/2] object-cover rounded-2xl ml-auto"
                                 />
                             )}
 
@@ -47,15 +45,13 @@ const ImageGridTextSection = ({
                                 <img
                                     src={images[3]}
                                     alt=""
-                                    className="w-3/4 aspect-[4/2] object-cover rounded-2xl mr-auto"
+                                    className="w-3/5 aspect-[5/3] object-cover rounded-2xl mr-auto"
                                 />
                             )}
                         </div>
 
                     </div>
-                </div>
-
-                {/* RIGHT: Text */}
+                </div>              
                 <div className="flex-1 max-w-xl">
                     <h2 className="text-4xl md:text-5xl font-serif text-[#3b2617] leading-tight mb-6">
                         {title}
@@ -66,7 +62,6 @@ const ImageGridTextSection = ({
                             {para.text}
                         </p>
                     ))}
-
                     {button?.text && (
                         <button
                             onClick={button.onClick}
