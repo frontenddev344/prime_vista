@@ -18,7 +18,7 @@ const ImageTextSection = ({
       >
         {/* Text */}
         <div className="flex-1 max-w-xl">
-          <h2 className="text-4xl md:text-5xl font-serif tracking-tight text-gray-900 leading-[1.2] mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif tracking-tight text-gray-900 leading-[1.2] mb-6">
             {title}
           </h2>
 

@@ -53,12 +53,12 @@ const ImageGridTextSection = ({
                     </div>
                 </div>              
                 <div className="flex-1 max-w-xl">
-                    <h2 className="text-4xl md:text-5xl font-serif text-[#3b2617] leading-tight mb-6">
+                    <h2 className="text-3xl sm:text-4xl  md:text-5xl font-serif text-[#3b2617] leading-tight mb-6">
                         {title}
                     </h2>
 
                     {paragraphs.map((para, i) => (
-                        <p key={i} className="text-gray-700 mb-4 leading-relaxed">
+                        <p key={i} className="text-gray-700 mb-4 leading-relaxed text-sm sm:text-base">
                             {para.text}
                         </p>
                     ))}
