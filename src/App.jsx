@@ -9,6 +9,9 @@ import Bars from "./pages/Bars";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Booking from './pages/Booking'
+import OffersPromotion from './pages/OffersPromotions'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsCondition from './pages/TermsConditions'
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
         <Route path="/about-us" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/booking" element={<Booking />} />
+        <Route path="/offers-promotions" element={<OffersPromotion />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-conditions" element={<TermsCondition />} />
       </Routes>
       <Footer />
     </Router>

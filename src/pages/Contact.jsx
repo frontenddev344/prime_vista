@@ -1,8 +1,22 @@
 import React from 'react'
+import SubBanner from "../components/SubBanner";  
+import ContactBanner from "../assets/contactBanner.jpg"
+import ContactContent from "../components/ContactContent"
+
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+   <>
+    <SubBanner
+        title="Contact"
+        backgroundImage={ContactBanner}
+        breadcrumbs={[
+          { label: "Home", link: "/" },
+          { label: "Contact" },
+        ]}
+      />
+       <ContactContent />
+   </>
   )
 }
 
