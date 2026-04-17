@@ -3,15 +3,15 @@ import SubBanner from "../components/SubBanner";
 import OfferBanner from "../assets/about_banner.jpg"
 
 const Section = ({ title, children }) => (
-  <section className="mb-10">
-    <h2 className="text-2xl font-semibold text-gray-800 mb-4">{title}</h2>
-    <div className="text-gray-600 leading-relaxed">{children}</div>
-    <hr className="mt-6 border-gray-200" />
+  <section className="mb-6 sm:mb-10">
+    <h2 className="text-2xl font-semibold text-primary mb-4">{title}</h2>
+    <div className="text-gray-600 leading-relaxed text-sm sm:text-base">{children}</div>
+    <hr className="mt-2 sm:mt-6 border-gray-200" />
   </section>
 );
 
 const List = ({ items }) => (
-  <ul className="list-disc pl-6 space-y-2 mt-3">
+  <ul className="list-disc pl-6 space-y-2 mt-3 text-sm sm:text-base">
     {items.map((item, i) => (
       <li key={i}>{item}</li>
     ))}
@@ -30,10 +30,10 @@ export default function PrivacyPolicy() {
           { label: "Privacy Policy" },
         ]}
       />
-      <div className="bg-gray-50 min-h-screen py-10 px-4">
-        <div className="max-w-7xl mx-auto bg-white p-8 rounded-xl ">
+      <div className="bg-gray-50 min-h-screen py-10">
+        <div className="container max-w-7xl mx-auto bg-white rounded-xl ">
 
-           <p className="text-gray-600 mb-6">
+           <p className="text-gray-600 mb-6 text-sm sm:text-base">
             At <span className="font-semibold">[PRIME VISTA]</span>, we are committed
             to protecting your privacy and ensuring that your personal information
             is handled in a safe and responsible manner. This Privacy Policy outlines
@@ -44,7 +44,7 @@ export default function PrivacyPolicy() {
           <hr className="mb-8 border-gray-200" />
 
           <Section title="Information We Collect">
-            <p>We may collect the following types of information:</p>
+            <p className="text-sm sm:text-base">We may collect the following types of information:</p>
 
             <h3 className="font-semibold text-gray-800 mt-4">
               Personal Information
@@ -146,15 +146,15 @@ export default function PrivacyPolicy() {
           </Section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+            <h2 className="text-2xl font-semibold text-primary mb-4">
               Contact Us
             </h2>
 
-            <p className="text-gray-600 mb-3">
+            <p className="text-gray-600 mb-3 text-sm sm:text-base">
               If you have any questions, please contact us:
             </p>
 
-            <ul className="space-y-2 text-gray-600">
+            <ul className="space-y-2 text-sm sm:text-base text-gray-600 mb-8">
               <li>📧 Email: [Your Email]</li>
               <li>📞 Phone: [Your Phone Number]</li>
               <li>📍 Address: [Hotel Address]</li>

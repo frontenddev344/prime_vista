@@ -5,17 +5,17 @@ import OfferBanner from "../assets/about_banner.jpg"
 export default function TermsConditions() {
   const Section = ({ title, children }) => (
     <div className="mb-8">
-      <h2 className="text-xl font-semibold text-gray-800 mb-3">
+      <h2 className="text-xl sm:text-3xl font-semibold text-primary mb-3">
         {title}
       </h2>
-      <div className="text-gray-600 text-sm leading-relaxed">
+      <div className="text-gray-600  leading-relaxed text-sm sm:text-base">
         {children}
       </div>
     </div>
   );
 
   const List = ({ items }) => (
-    <ul className="list-disc pl-5 space-y-2">
+    <ul className="list-disc pl-5 space-y-2 text-sm sm:text-base">
       {items.map((item, index) => (
         <li key={index}>{item}</li>
       ))}
@@ -32,11 +32,11 @@ export default function TermsConditions() {
           { label: "Terms & Conditions" },
         ]}
       />
-      <div className="bg-gray-50 min-h-screen py-10 px-4">
-        <div className="max-w-7xl mx-auto bg-white  rounded-lg p-8">
+      <div className="bg-gray-50 min-h-screen py-10">
+        <div className="max-w-7xl container mx-auto bg-white  rounded-lg">
 
           {/* Header */}
-          <p className="text-gray-600 text-sm mb-6">
+          <p className="text-gray-600 text-sm sm:text-base mb-6">
             Welcome to <span className="font-semibold">[PRIME VISTA]</span>. By accessing our website and using our services, you agree to comply with the following Terms & Conditions. Please read them carefully before making any booking.
           </p>
 

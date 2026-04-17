@@ -4,7 +4,7 @@ import { Home } from "lucide-react";
 function SubBanner({ title, backgroundImage, breadcrumbs = [] }) {
   return (
     <div
-      className="relative h-[50vh] flex items-center justify-center text-white"
+      className="relative h-[50vh] flex items-center justify-center text-white px-2"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
@@ -16,7 +16,7 @@ function SubBanner({ title, backgroundImage, breadcrumbs = [] }) {
 
       {/* Content */}
       <div className="relative z-10 text-center">
-        <h1 className="text-4xl md:text-5xl mb-2">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl mb-2">
           {title}
         </h1>
 
