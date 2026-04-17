@@ -9,7 +9,7 @@ export default function Header() {
 
     useEffect(() => {
         const handleScroll = () => {
-            setScrolled(window.scrollY > 5); 
+            setScrolled(window.scrollY > 5);
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -21,12 +21,11 @@ export default function Header() {
 
     return (
         <header
-            className={`fixed w-full px-2  transition-all duration-300 z-99 ${
-                scrolled ? "top-0" : "top-3"
-            }`}
+            className={`fixed w-full px-2  transition-all duration-300 z-99 ${scrolled ? "top-0" : "top-3"
+                }`}
         >
             <div className="container mx-auto flex items-center justify-between bg-white rounded-2xl px-4 py-2 shadow-sm">
-                
+
                 {/* Logo */}
                 <div className="flex items-center gap-2">
                     <Link to="/">
@@ -41,19 +40,19 @@ export default function Header() {
                     <NavLink to="/" className={linkClasses}>Home</NavLink>
                     <NavLink to="/rooms" className={linkClasses}>Rooms</NavLink>
                     <NavLink to="/bars-and-lounges" className={linkClasses}>Bars & Lounges</NavLink>
-                    <NavLink to="/about-us" className={linkClasses}>About Us</NavLink>                
+                    <NavLink to="/about-us" className={linkClasses}>About Us</NavLink>
                     <NavLink to="/contact" className={linkClasses}>Contact</NavLink>
                 </nav>
 
                 {/* Right Side */}
                 <div className="flex items-center gap-2">
-                <NavLink to="/booking">
-                    <span className="relative inline-flex overflow-hidden border border-transparent bg-btn text-white px-5 py-2 rounded-full font-medium text-sm md:text-base transition-all duration-300 ease-out group">
-                        <span className="relative z-10 flex items-center gap-2 group-hover:text-charcoal transition-colors duration-300">
-                            Book Now <ArrowUpRight size={18} className="hidden sm:block" />
+                    <NavLink to="/booking">
+                        <span className="relative inline-flex overflow-hidden border border-transparent bg-btn text-white px-5 py-2 rounded-full font-medium text-sm md:text-base transition-all duration-300 ease-out group">
+                            <span className="relative z-10 flex items-center gap-2 group-hover:text-charcoal transition-colors duration-300">
+                                Book Now <ArrowUpRight size={18} className="hidden sm:block" />
+                            </span>
+                            <span className="absolute inset-0 bg-[#f3eae1] scale-y-0 origin-bottom transition-transform duration-300 ease-out group-hover:scale-y-100 rounded-full"></span>
                         </span>
-                        <span className="absolute inset-0 bg-[#f3eae1] scale-y-0 origin-bottom transition-transform duration-300 ease-out group-hover:scale-y-100 rounded-full"></span>
-                    </span>
                     </NavLink>
 
                     <button className="lg:hidden" onClick={() => setOpen(!open)}>
@@ -70,7 +69,7 @@ export default function Header() {
                             <NavLink to="/" className={linkClasses} onClick={() => setOpen(false)}>Home</NavLink>
                             <NavLink to="/rooms" className={linkClasses} onClick={() => setOpen(false)}>Rooms</NavLink>
                             <NavLink to="/bars-and-lounges" className={linkClasses} onClick={() => setOpen(false)}>Bars & Lounges</NavLink>
-                            <NavLink to="/about-us" className={linkClasses} onClick={() => setOpen(false)}>About Us</NavLink>                      
+                            <NavLink to="/about-us" className={linkClasses} onClick={() => setOpen(false)}>About Us</NavLink>
                             <NavLink to="/contact" className={linkClasses} onClick={() => setOpen(false)}>Contact</NavLink>
                         </nav>
                     </div>
